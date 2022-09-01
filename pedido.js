@@ -20,7 +20,7 @@ function actualizar(){       // Funcion para recomenzar al poner un precio erron
 while (compraCajanavidad == true){
     let nombreCliente  = prompt("Ingrese su nombre").toUpperCase()   //Ingresa el cliente y lo pasa a mayusculas
 
-    let caja = parseInt(prompt("Elija su Caja Contenedora (solo el precio): \n Caja Verde $75 \n Caja Roja $100"))  
+    let caja = parseInt(prompt("Elija su Caja Contenedora (Ingresar solo Numeros): \n Caja Verde $75 \n Caja Roja $100"))  
     if ((caja == 75) || (caja == 100)) { // Comprueba que el valor sea el correcto
         alert(`Agregado a su Compra`)
         }else{
@@ -28,7 +28,7 @@ while (compraCajanavidad == true){
             actualizar();
         }
 // Repite por cada articulo
-    let sidra = parseInt(prompt("Elija su Sidra (solo el precio): \n Sidra Real $400 \n Sidra Del Valle $450"))  
+    let sidra = parseInt(prompt("Elija su Sidra (Ingresar solo Numeros): \n Sidra Real $400 \n Sidra Del Valle $450"))  
     if ((sidra == 400) || (sidra == 450)) {
         alert(`Agregado a su Compra`)
         }else{
@@ -36,7 +36,7 @@ while (compraCajanavidad == true){
             actualizar();
         }
 
-    let panDulce = parseInt(prompt("Elija su Pan Dulce (solo el precio): \n Pan Dulce Nevares $300 \n Pan dulce Aires de Lujan $350"))  
+    let panDulce = parseInt(prompt("Elija su Pan Dulce (Ingresar solo Numeros): \n Pan Dulce Nevares $300 \n Pan dulce Aires de Lujan $350"))  
     if ((panDulce == 300) || (panDulce == 350)) {
         alert(`Agregado a su Compra`)
         }else{
@@ -44,7 +44,7 @@ while (compraCajanavidad == true){
             actualizar();
         }
 
-    let turron = parseInt(prompt("Elija su Turron (solo el precio): \n Turron Georgalos $100 \n Turron Arcor $120"))  
+    let turron = parseInt(prompt("Elija su Turron (Ingresar solo Numeros): \n Turron Georgalos $100 \n Turron Arcor $120"))  
     if ((turron == 100) || (turron == 120)) {
         alert(`Agregado a su Compra`)
         }else{
@@ -52,7 +52,7 @@ while (compraCajanavidad == true){
             actualizar();
         }
 
-    let budin = parseInt(prompt("Elija su Budin (solo el precio): \n Budin Nevares $200 \n Budin Aires de Lujan $250"))  
+    let budin = parseInt(prompt("Elija su Budin (Ingresar solo Numeros): \n Budin Nevares $200 \n Budin Aires de Lujan $250"))  
     if ((budin == 200) || (budin == 250)) {
         alert(`Agregado a su Compra`)
         }else{
@@ -60,14 +60,14 @@ while (compraCajanavidad == true){
             actualizar();
         }
 
-    let lataConserva = parseInt(prompt("Elija su Fruta en Conserva (solo el precio): \n Durazno en Almibar Molto $500 \n Anana en Almibar $600"))  
+    let lataConserva = parseInt(prompt("Elija su Fruta en Conserva (Ingresar solo Numeros): \n Durazno en Almibar Molto $500 \n Anana en Almibar $600"))  
     if ((lataConserva == 500) || (lataConserva == 600)) {
         alert(`Agregado a su Compra`)
         }else{
             let lataConserva = 0 (alert("Usted ingreso un valor incorrecto, por favor vuelva a empezar"))  
             actualizar();
         }
-    let confitados = parseInt(prompt("Elija su Confite (solo el precio): \n Garrapiñadas Georgalos $60 \n Confites de Mani $90"))  
+    let confitados = parseInt(prompt("Elija su Confite (Ingresar solo Numeros): \n Garrapiñadas Georgalos $60 \n Confites de Mani $90"))  
     if ((confitados == 60) || (confitados == 90)) {
         alert(`Agregado a su Compra`)
         }else{
@@ -75,7 +75,7 @@ while (compraCajanavidad == true){
             actualizar();
         }
     //Descuento que resta al final y muestra en el descuento
-    let descuento = parseInt(prompt("¿Usted tiene un Cupon de Descuento? \n Ingrese el monto en Pesos \n si no tiene por favor ingrese Cero"))  
+    let descuento = parseInt(prompt("¿Usted tiene un Cupon de Descuento? \n Ingrese el monto en Pesos \n si no tiene por favor ingrese 0 (Ingresar solo Numeros)"))  
 
     compraCajanavidad = confirm(`Cliente: ${nombreCliente} - Su caja incluye: 
     Tipo de Caja $ ${caja} - 
